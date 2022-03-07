@@ -5,6 +5,8 @@ An e-commerce back-end API built with MySQL and Express.js. The database has tab
 
 [![preview](./assets/demo.gif)]()
 
+
+
 ## Installation
 
 Clone the repository
@@ -45,9 +47,17 @@ Now you are ready to start the server
 
     npm start
 
+## Insomnia Routes
+
 To test the routes using insomnia, create folders for categories, products and tags.
 
-Create routes for categories
+![route-folders](./assets/route-folders.png)
+
+### Categories
+
+Make the insomnia routes for Categories
+
+![categories](./assets/category-routes.png)
 
 GET route for all categores
 

@@ -55,9 +55,13 @@ To test the routes using insomnia, create folders for categories, products and t
 
 ### Categories
 
+![categories](./assets/category-routes.png)
+
 Make the insomnia routes for Categories
 
-![categories](./assets/category-routes.png)
+<details>
+
+<summary>click to view insomnia routes</summary>
 
 GET route for all categores
 
@@ -80,9 +84,9 @@ Then add the body
 PUT route to update a category name
 
     localhost:3001/api/categories/:id
-    
+
 Then add the body
-          
+
       {
           "category_name": "leggings"
       }
@@ -91,3 +95,47 @@ DELETE route to remove category by id
 
     localhost:3001/api/categories/:id
 
+</details>
+
+### Products
+
+Make the insomnia routes for Products
+
+<details>
+
+<summary>click to view insomnia routes</summary>
+
+GET route for all products
+
+    localhost:3001/api/products
+
+GET route for category by id
+
+    localhost:3001/api/products/:id
+
+POST route to create a new category
+
+    localhost:3001/api/products
+
+Then add the body
+
+      {
+          "category_name": "pants"
+      }
+
+PUT route to update a category name
+
+    localhost:3001/api/products/:id
+
+Then add the body
+
+      {
+          "category_name": "leggings"
+      }
+
+DELETE route to remove category by id
+
+    localhost:3001/api/products/:id
+
+
+</details>

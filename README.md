@@ -215,6 +215,7 @@ DELETE route to remove tag by id
 ![node-js](https://img.shields.io/badge/-Node.js-3c873a?logo=node.js&logoColor=white&logoWidth=30)
 ![express-js](https://img.shields.io/badge/-Express.js-000?logo=express&logoColor=white&logoWidth=30)
 ![mysql](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&logoWidth=30)
+![Sequelize](https://img.shields.io/badge/-Sequelize-52B0E7?logo=sequelize&logoColor=white&logoWidth=30)
 
 ## Questions
 

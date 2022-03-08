@@ -3,11 +3,21 @@
 ## Description
 An e-commerce back-end API built with MySQL and Express.js. The database has tables for categories, products and tags, then joins products and tags through an intermediate table.
 
-[![preview](./assets/demo.gif)]()
+[![preview](./assets/challenge-demo.gif)]()
 
+## Index
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Insomnia Routes](#insomnia-routes)
+    - [Categories](#categories)
+    - [Products](#products)
+    - [Tags](#tags)
+- [License](#license)
+- [Built With](#built-with)
 
 ## Installation
+[^](#index)
 
 Clone the repository
 
@@ -18,6 +28,7 @@ Install the necessary dependencies
     npm i
 
 ## Usage
+[^](#index)
 
 First you must create the database.
 
@@ -48,12 +59,14 @@ Now you are ready to start the server
     npm start
 
 ## Insomnia Routes
+[^](#index)
 
 To test the routes using insomnia, create folders for categories, products and tags.
 
 ![route-folders](./assets/route-folders.png)
 
 ### Categories
+[^^](#insomnia-routes)
 
 ![categories](./assets/category-routes.png)
 
@@ -98,8 +111,11 @@ DELETE route to remove category by id
 </details>
 
 ### Products
+[^^](#insomnia-routes)
 
 Make the insomnia routes for Products
+
+![categories](./assets/product-routes.png)
 
 <details>
 
@@ -109,33 +125,103 @@ GET route for all products
 
     localhost:3001/api/products
 
-GET route for category by id
+GET route for product by id
 
     localhost:3001/api/products/:id
 
-POST route to create a new category
+POST route to create a new product
 
     localhost:3001/api/products
 
-Then add the body
+Then add the body of the new product
 
-      {
-          "category_name": "pants"
-      }
+    {
+        "product_name": "dockers",
+        "price": 24,
+        "stock": 8,
+        "tagIds": [3,4,5,6,7],
+        "category_id": 7
+    }
 
-PUT route to update a category name
-
-    localhost:3001/api/products/:id
-
-Then add the body
-
-      {
-          "category_name": "leggings"
-      }
-
-DELETE route to remove category by id
+PUT route to update a products tags
 
     localhost:3001/api/products/:id
 
+Then add the body with the updated tag ids
+
+    {
+        "tagIds": [ 3,4,5,6,7 ]
+    }
+
+DELETE route to remove product by id
+
+    localhost:3001/api/products/:id
 
 </details>
+
+### Tags
+[^^](#insomnia-routes)
+
+Make the insomnia routes for tags
+
+![categories](./assets/tag-routes.png)
+
+<details>
+
+<summary>click to view insomnia routes</summary>
+
+GET route for all tags
+
+    localhost:3001/api/tags
+
+GET route for tag by id
+
+    localhost:3001/api/tags/:id
+
+POST route to create a new tag
+
+    localhost:3001/api/tags
+
+Then add the body of the new tag
+
+    {
+        "tag_name": "chartreuse"
+    }
+
+PUT route to update a tag name
+
+    localhost:3001/api/tags/:id
+
+Then add the body with the updated tag ids
+
+    {
+        "tag_name": "teal"
+    }
+
+DELETE route to remove tag by id
+
+    localhost:3001/api/tags/:id
+
+</details>
+
+## License
+[^](#index)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-orange)](https://choosealicense.com/licenses/mit)
+
+## Built With
+[^](#index)
+
+![node-js](https://img.shields.io/badge/-Node.js-3c873a?logo=node.js&logoColor=white&logoWidth=30)
+![express-js](https://img.shields.io/badge/-Express.js-000?logo=express&logoColor=white&logoWidth=30)
+![mysql](https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&logoWidth=30)
+
+## Questions
+
+Feel free to contact me using the information below!
+
+- GitHub Profile: [@scottrohrig](https://github.com/scottrohrig)
+
+- Email: scott.rohrig@gmail.com
+
+- Project Repository/URL: [github.com/.../e-commerce-back-end](https://github.com/scottrohrig/e-commerce-back-end)

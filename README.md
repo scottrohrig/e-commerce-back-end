@@ -3,8 +3,7 @@
 ## Description
 An e-commerce back-end API built with MySQL and Express.js. The database has tables for categories, products and tags, then joins products and tags through an intermediate table.
 
-[![preview](./assets/challenge-demo.gif)]()
-[![tech-demo](./assets/tech-demo.gif)]()
+[![preview](./assets/challenge-demo.gif)](https://drive.google.com/file/d/1wM0ewdz1afvkWx-qFJUGsK7yQGpZ-31T/view)
 
 ## Index
 

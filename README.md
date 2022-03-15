@@ -21,7 +21,7 @@ An e-commerce back-end API built with MySQL and Express.js. The database has tab
 
 Clone the repository
 
-    git clone git@github.com:scottrohrig/employee-tracker.git
+    git clone git@github.com:scottrohrig/e-commerce-back-end.git
 
 Install the necessary dependencies
 
